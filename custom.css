@@ -1,0 +1,109 @@
+body {
+	background-image: url("metal-diamond-plate.jpg")
+
+}
+
+div.container-wrapper.background-fluid::before{
+	content: none;
+}
+
+body > div.container-full > nav {
+/*	text-shadow: 1em 0em;
+*/	margin-bottom: 0px;
+}
+
+.contact {
+	padding-left: 1em;
+}
+
+#contentWrapper h1 {
+	text-align: center;
+}
+
+#contentWrapper img {
+	border-radius: 1em;
+	border: .3em solid gray;
+}
+
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.header {
+	text-shadow: 10px 2px 20px black;
+	color: #0293ed;
+	font-size: 100px;
+	text-align: center;
+}
+
+.header small {
+	color: #72c9ff;
+}
+
+.main-content {
+	margin-left: 3%;
+}
+
+.background-wrapper {
+	position: -4em;
+}
+
+
+#centerContent {
+	text-align: center;
+}
+
+#osha-list {
+	list-style: none;
+	padding-left: 0em;
+}
+
+#osha-list li {
+	display: inline;
+	padding: .3em;
+	margin: 0em 1em 0em 1em;
+	border: .2em solid #d3e1ea;
+	border-radius: 1em;
+}
+
+.schwenzer-portrait {
+	border-radius: 4em;
+	padding: 1em;
+	float: right;
+	width: 40%;
+	height: auto;
+	/*border: 1em solid black;*/
+}
+
+.food-safety-regulatory {
+	text-align: center;
+}
+
+.contact {
+	min-width: 30em;
+	position: relative;
+	left: 1em;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+;
+  vertical-align: top;
+
+}
+
+h2 {
+	text-align: center;
+}
+
+img#mouse-cheese {
+  display: block;
+  height: auto;
+  width: 40em;
+  margin: 0 auto;
+}

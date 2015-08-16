@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="schwenzerSafety">
+<head>
+	<meta charset="utf-8">
+	<!-- <link href="style.css" rel="stylesheet" /> -->
+	<link rel="stylesheet" href="custom.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="angular.js"></script>
+	<script src="angular-route.js"></script>
+	<script>
+	angular.module("schwenzerSafety", ["ngRoute"])
+	.config(function($routeProvider, $locationProvider){
+
+		$routeProvider.when("/services",{
+			templateUrl: "/servicesPage.html"
+		});
+
+		$routeProvider.when("/about",{
+			templateUrl: "/about.html"
+		});
+
+		$routeProvider.when("/workplace-safety", {
+			templateUrl: "/workplace-safety.html"
+		});
+
+		$routeProvider.when("/foodplace-safety", {
+			templateUrl: "/foodplace-safety.html"
+		})
+
+		$routeProvider.otherwise({
+			templateUrl: "/mainPage.html"
+		})
+	})
+	.controller("mainController", function($scope , $http){
+	})
+	</script>
+</head>
+<body ng-controller="mainController">
+
+	<div class="container-full">
+		<nav class="navbar navbar-static-top navbar-inverse ">
+			<div class="container-fluid">
+				<div>
+					<div>
+						<ul class="nav navbar-nav " >
+							<li><a href="#">Home</a></li>
+							<li><a href="/#/services">Services</a></li>
+							<li><a href="/#/workplace-safety">Workplace Safety</a></li>
+							<li><a href="/#/foodplace-safety">Food Safety</a></li>
+							<li><a href="/#/about">About</a></li>
+						</ul>
+					</div>
+					<div>
+					</nav>
+				</div>
+
+				<div class="background-wrapper container-fluid">
+					<div class="headerContainer">
+						<div id="header-background">
+							<h1 class="header">Schwenzer <small>Safety Services</small></h1>
+						</div>
+					</div>
+
+					<div class=" main-content col-md-8 panel panel-default jumbotron">
+						<ng-view class="panel-body"></ng-view>
+					</div>
+					<div class="contact col-sm-3  container panel panel-default">
+						<h2>Contact Info</h2>
+						<ul class="list-group">
+						<li class="list-group-item">180 South Hill Road</li>
+						<li class="list-group-item">Colonia NJ 07067</li>
+						<li class="list-group-item">Phone/Fax: 732-680-0005</li>
+						<li class="list-group-item">Cell:  732-236-8974</li>
+						<li class="list-group-item">Email: howard@schwenzersafetyservices.com</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</body>
+		</html>

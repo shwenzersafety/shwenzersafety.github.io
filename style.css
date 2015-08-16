@@ -1,0 +1,119 @@
+body {
+  /*background-image: url(http://i.imgur.com/p3yt1lC.jpg);*/
+  background-color: #679ED2;
+    font-family: 'Lato', sans-serif;
+}
+
+#wrapper{
+  border-radius: 1em;
+  border: .2em #E5ECF1 solid;
+  box-shadow: .5em .4em gray;
+  display: block;
+  background-color: white;
+  position: relative;
+  width: 90em;
+  height:70em;
+  margin: 5% auto;
+}
+
+#contentWrapper {
+  padding: 1em;
+  border-radius: 1em;
+  background-color: #EBF1FF;
+}
+
+#contentWrapper p {
+  font-size: 30px;
+}
+
+#navContainer {
+  position: absolute;
+  bottom: 0;
+  right:9em;
+}
+
+#navList {
+  padding: 0em;
+  font-size: 200%;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.navBar {
+  position: relative;
+  top: 2em;
+  display: inline;
+  list-style: none;
+  background-color: #26527C;
+  padding: 1em;
+  border-radius: .2em;
+  color: white;
+}
+
+.navBar + .navBar {
+  margin-left: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+}
+
+#companyTitleWrapper{
+ position: relative;
+  top: -4em;
+  float:right;
+  font-size: 49px;
+}
+
+#companyTitleContent{
+      color: #B4DBFF;
+      text-shadow: 0.05em .05em 0em #002C4D;
+}
+
+#companyTitleContent span{
+    color:white;
+
+}
+
+div#footer{
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: .2em;
+}
+
+div#mainContent{
+  overflow: scroll;
+  background-color: white;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  width: 55em;
+  padding: 2em;
+}
+
+img {
+width: 30%;
+position: absolute;
+top: 2em;
+left: 1em;
+}
+
+
+li.navBar:hover{
+  box-shadow: .2em .2em 0em #04396C;
+  position: relative;
+  color: aquablue;
+}
+
+#picture img {
+  border-radius: 1em;
+}
+
